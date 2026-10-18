@@ -69,7 +69,7 @@ When interacting with ASP.NET AJAX, Telerik RadComboBox, and dynamic JavaScript 
     - _Example:_ `_click(_span("cmbAccountType_Arrow"));`
 2. **Hidden Field Commitment:**
     
-    - Always trigger `_blur()` or type/set the value prior to selecting from the list to ensure the hidden form input commits the selected value before step transitions or saves.
+    - Always type/set the value prior to selecting from the list to ensure the hidden form input commits the selected value before step transitions or saves. Then trigger `_blur` after selecting the list item.
     - _Example:_
         
         ```
