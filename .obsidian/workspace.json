@@ -189,13 +189,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1e97c9f1390348fc",
+  "active": "45e65c8430afa57d",
   "lastOpenFiles": [
+    "Naming Conventions.md",
+    "AJAX - DOM Race.md",
     "Notification of Script Completion.md",
     "Sahi Pro & JavaScript.md",
     "SAHI Pro Automation Refactoring Guide.md",
     "AJAX - DOM RACE.md",
-    "Module Variable Prefixes.md",
-    "Naming Conventions.md"
+    "Module Variable Prefixes.md"
   ]
 }
