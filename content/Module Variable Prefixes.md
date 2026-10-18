@@ -29,7 +29,7 @@ var $s_WorkOrderNumber = "WO-2026-001";
 // 3. Helper Function Signature & Body
 function createWorkOrder($p_FailureCode, $p_WONumber) {
     var $localStatus = _getText(_textbox("ctl00$mc$ddlStatus"));
-    
+     
     if ($localStatus == "Please select") {
         _setValue(_textbox("ctl00$mc$txtFailureCode"), $p_FailureCode);
     }
