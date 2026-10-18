@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "b6f7990725117a27",
+        "id": "c648c0040378d1f8",
         "type": "tabs",
         "children": [
           {
-            "id": "f58a2e32c4264a8e",
+            "id": "1e97c9f1390348fc",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -185,11 +185,14 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f58a2e32c4264a8e",
+  "active": "1e97c9f1390348fc",
   "lastOpenFiles": [
+    "SAHI Pro Automation Refactoring Guide.md",
+    "AJAX - DOM RACE.md",
     "Sahi Pro & JavaScript.md",
     "Module Variable Prefixes.md",
     "Naming Conventions.md",
