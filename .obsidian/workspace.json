@@ -10,15 +10,17 @@
           {
             "id": "d20a8d4daeb6261e",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Naming Conventions.md",
+                "file": "Sahi Pro & JavaScript.md",
                 "mode": "source",
                 "source": false
               },
+              "pinned": true,
               "icon": "lucide-file",
-              "title": "Naming Conventions"
+              "title": "Sahi Pro & JavaScript"
             }
           }
         ]
@@ -201,11 +203,11 @@
   },
   "active": "d20a8d4daeb6261e",
   "lastOpenFiles": [
-    "Notification of Script Completion.md",
     "Naming Conventions.md",
-    "Module Variable Prefixes.md",
-    "AJAX - DOM Race.md",
     "Sahi Pro & JavaScript.md",
+    "Module Variable Prefixes.md",
+    "Notification of Script Completion.md",
+    "AJAX - DOM Race.md",
     "SAHI Pro Automation Refactoring Guide.md",
     "AJAX - DOM RACE.md"
   ]
