@@ -1,4 +1,6 @@
 
+See also [[Dynamic Wait]] 
+
 In SAHI Pro, **`_focus()`** programmatically sets browser keyboard/DOM focus onto a specific input element (like a textbox, combo box, or search field).
 
 While `_blur()` tells the browser _"the user left this field"_, **`_focus()`** tells the browser _"the user just clicked into or tabbed into this field"_.

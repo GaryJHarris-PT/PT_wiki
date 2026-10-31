@@ -17,7 +17,7 @@ If you take `_setValue()` out entirely on a massive list, SAHI may throw a `"not
 
 ---
 
-### 2. Why Your Predecessor's Code Was Buggy
+### 2. Why Use of _setValue can be Was Buggy
 
 Your predecessor's snippet:
 

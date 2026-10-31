@@ -1,3 +1,5 @@
+See also [[_blur and _focus]] 
+
 In SAHI Pro, the basic syntax for a **dynamic wait** is:
 
 ```
