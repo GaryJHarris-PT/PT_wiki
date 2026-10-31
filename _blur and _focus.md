@@ -76,4 +76,26 @@ _wait(3000, !_isVisible(_div("ctl00_mc_RadAjaxLoadingPanel"))); // Wait for load
 
 ---
 
-💡 Which specific field or screen is giving you the error right now? If you share the field name or control ID, we can tailor the exact 3-line sequence for it!
+When interacting with a standard text field (`_textbox`), `_setValue()` puts text into the element. However, in ASP.NET and AJAX applications, text input fields often have client-side JavaScript listeners attached to the element gaining focus (`focus`), changing (`change`), or losing focus (`blur`).
+
+If SAHI only sets the text value without triggering those browser events, ASP.NET may not register that the field was modified, leaving client-side validation or ViewState synchronization incomplete.
+
+---
+
+Recommended Pattern
+
+```
+var $txtField = _textbox("ctl00_mc_txtQuantity");
+
+_focus($txtField);
+_setValue($txtField, "50");
+_blur($txtField);
+```
+
+---
+
+How Each Call Works
+
+- **_focus($txtField)**: Programmatically sets DOM focus on the text field, firing the browser's `focus` event so client-side tracking and listeners initialize.
+- **_setValue($txtField, "50")**: Enters the specified text value directly into the input element.
+- **_blur($txtField)**: Programmatically removes focus from the element, firing the browser's `change` and `blur` events. This tells ASP.NET that editing is complete, committing the value, clearing validation error flags, and executing any attached calculation scripts.
