@@ -1,0 +1,8 @@
+SAHI Pro provides built-in mechanisms to separate test data from script logic using native script APIs (`_dataDrive`), data-driven suite files (`.dd.csv`), and built-in spreadsheet readers (`_readCSVFile` / `_readExcelFile`).
+
+**Key themes I noticed:**
+
+1. **Script-Level Data Driving (****_dataDrive****)**: In your `.sah` scripts, SAHI provides the `_dataDrive($fn, $data)` function. You pass it a target action function (e.g., `receiveIntoStock`) and a 2D data array, and SAHI automatically loops through every row of data without you writing manual `for` loops.
+2. **Built-in File Reading APIs**: SAHI includes `_readCSVFile("data.csv")` and `_readExcelFile("data.xlsx", "Sheet1")` functions that instantly convert external spreadsheets into 2D arrays ready for `_dataDrive()`. It also supports loading data from SQL databases via `_getDB()`.
+3. **Suite-Level Data Driven Suites (****.dd.csv****)**: Instead of standard `.suite` files, SAHI supports `.dd.csv` suite files. Column headers define script arguments (such as `$username`, `$warehouse`, `$itemNumber`), and SAHI automatically re-executes the target `.sah` script for every row of data in the CSV.
+4. **Maintenance & Architectural Benefits**: Moving test data out of your `.sah` variable files into external CSV/Excel sheets prevents code edits whenever test parameters change, allows non-technical team members to manage test data sets, and makes test failure logs much cleaner to read.
